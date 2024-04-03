@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Классы</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Калькулятор калорий</h2>
+      <label for="weight">Ваш вес (кг):</label>
+      <input type="number" id="weight" min="0" required />
+      <label for="height">Ваш рост (см):</label>
+      <input type="number" id="height" min="0" required />
+      <label for="age">Ваш возраст:</label>
+      <input type="number" id="age" min="0" required />
+      <label for="activity">Уровень активности:</label>
+      <select id="activity">
+        <option value="1.2">Минимальный (сидячий образ жизни)</option>
+        <option value="1.375">
+          Низкий (легкие тренировки 1-3 дня в неделю)
+        </option>
+        <option value="1.55">Средний (тренировки 3-5 дней в неделю)</option>
+        <option value="1.725">
+          Высокий (интенсивные тренировки 6-7 дней в неделю)
+        </option>
+        <option value="1.9">
+          Очень высокий (тяжелые тренировки и физическая работа)
+        </option>
+      </select>
+      <button onclick="pasreInfo()">Рассчитать</button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
